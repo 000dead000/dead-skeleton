@@ -230,11 +230,11 @@ ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 DISABLE_REGISTER = True
 
 # Disable register
-if DISABLE_REGISTER:
-    ACCOUNT_ADAPTER = 'dead_users.account_adapter.DisabledSignupAccountAdapter'
+# if DISABLE_REGISTER:
+#     ACCOUNT_ADAPTER = 'dead_users.account_adapter.DisabledSignupAccountAdapter'
 
 # Enable first_name and last_name in signup
-ACCOUNT_SIGNUP_FORM_CLASS = 'dead_users.forms.SignupForm'
+# ACCOUNT_SIGNUP_FORM_CLASS = 'dead_users.forms.SignupForm'
 
 PRIMARY_IDENTITY_FIELD = "email"
 
