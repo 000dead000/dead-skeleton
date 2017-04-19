@@ -120,6 +120,7 @@ INSTALLED_APPS += [
 
 INSTALLED_APPS += [
     'dead_common',
+    'dead_js_utilities',
 ]
 
 INSTALLED_APPS += [
