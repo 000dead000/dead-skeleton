@@ -25,7 +25,7 @@ urlpatterns = [
     url(r'^accounts/', include('allauth.urls')),
 
     # dead js utilities
-    url(r'^dead/js/', include('dead_js_utilities.urls', namespace='dead-js-utilities')),
+    url(r'^dead/js/tests/', include('dead_js_utilities.urls', namespace='dead-js-utilities')),
 
     # home
     url(r'^$', TemplateView.as_view(template_name="home.html"), name='home'),
