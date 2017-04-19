@@ -24,6 +24,9 @@ urlpatterns = [
     # url(r"^accounts/signup/$", signup, name="account_signup"),
     url(r'^accounts/', include('allauth.urls')),
 
+    # dead tests
+    url(r'^dead/tests$', TemplateView.as_view(template_name="dead-tests/home.html"), name='dead-tests'),
+
     # dead js utilities
     url(r'^dead/js/tests/', include('dead_js_utilities.urls', namespace='dead-js-utilities')),
 
