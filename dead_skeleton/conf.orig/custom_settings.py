@@ -60,7 +60,7 @@ RUNNING_ENVIRONMENT = RUNNING_ENVIRONMENT_DEV
 TEMPLATES[0]['OPTIONS']['builtins'] = [
     'django.templatetags.static',
     'crispy_forms.templatetags.crispy_forms_tags',
-    # 'applications.common.templatetags.filters',
+    'dead_common.templatetags.filters',
 ]
 
 # ------------------------------------------------------------
@@ -69,8 +69,8 @@ TEMPLATES[0]['OPTIONS']['builtins'] = [
 
 TEMPLATES[0]["OPTIONS"]["context_processors"] += [
     'django.template.context_processors.media',
-    # 'applications.common.context_processors.current_application_and_view',
-    # 'applications.common.context_processors.basic',
+    'dead_common.context_processors.current_application_and_view',
+    'dead_common.context_processors.basic',
 ]
 
 # ------------------------------------------------------------
@@ -120,19 +120,12 @@ INSTALLED_APPS += [
 
 INSTALLED_APPS += [
     'dead_common',
-    # 'dead_users',
-    # 'dead_contact',
-    # 'dead_crud',
-    # 'dead_essay',
-    # 'dead_crud_essay',
-    # 'dead_history',
 ]
 
 INSTALLED_APPS += [
     'django.contrib.sites',
     'django.contrib.humanize',
 
-    # 'bootstrapform',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
