@@ -25,10 +25,13 @@ urlpatterns = [
     url(r'^accounts/', include('allauth.urls')),
 
     # dead tests
-    url(r'^dead/tests$', TemplateView.as_view(template_name="dead-tests/home.html"), name='dead-tests'),
+    url(r'^dead/tests$', TemplateView.as_view(template_name="dead-common/home-tests.html"), name='dead-tests'),
 
     # dead js utilities
     url(r'^dead/js/tests/', include('dead_js_utilities.urls', namespace='dead-js-utilities')),
+
+    # dead forms
+    url(r'^dead/forms/tests/', include('dead_forms.urls', namespace='dead-forms')),
 
     # home
     url(r'^$', TemplateView.as_view(template_name="home.html"), name='home'),
