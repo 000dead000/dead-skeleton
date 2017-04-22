@@ -93,6 +93,10 @@ elif RUNNING_ENVIRONMENT == RUNNING_ENVIRONMENT_PRODUCTION:
         'DOMAIN_PLACEHOLDER',
         'www.DOMAIN_PLACEHOLDER',
     ]
+else:
+    ALLOWED_HOSTS = [
+        '0.0.0.0:9500'
+    ]
 
 # ------------------------------------------------------------
 # Apps
