@@ -95,7 +95,9 @@ elif RUNNING_ENVIRONMENT == RUNNING_ENVIRONMENT_PRODUCTION:
     ]
 else:
     ALLOWED_HOSTS = [
-        '192.168.0.19'
+        'localhost',
+        '127.0.0.1',
+        '192.168.0.19',
     ]
 
 # ------------------------------------------------------------
