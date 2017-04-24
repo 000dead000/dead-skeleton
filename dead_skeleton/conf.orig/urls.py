@@ -27,6 +27,9 @@ urlpatterns = [
     # dead tests
     url(r'^dead/tests$', TemplateView.as_view(template_name="dead-common/home-tests.html"), name='dead-tests'),
 
+    # dead common
+    url(r'^dead/common/tests/', include('dead_common.urls', namespace='dead-common')),
+
     # dead js utilities
     url(r'^dead/js/tests/', include('dead_js_utilities.urls', namespace='dead-js-utilities')),
 
